@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#u_skip > a:nth-child(1)
+
+form{
+		 background-color: paleturquoise;
+		 width: 700px;
+		 border: 1px dashed blue;
+		 margin: 10px auto 0px auto;
+		 padding: 20px;
+	}
+	th{
+		background-color: #314189;
+		font-size: 8pt;
+		color: #222;
+	}
+	/*
+	2.class selector
+	*/
+	.TXTFLD{
+		border: 1px solid blue;
+		color: blue;
+	}
+	.TXTFLD1{
+		border: 1px dotted red;
+		color: red;
+	}
+	/*
+	3.id selector
+	*/
+	#jointbl{
+		background-color: tomato;
+		width: 600px;
+	}
+	#first-tr{
+		background-color: gold;
+	}
+	/*
+	4.attribute selector
+	*/
+	[type=submit]{
+		
+	}
+	input[type=submit]{
+		background-color: blueviolet;
+		color: yellowgreen;
+		font-weight: 900;
+	}
+	input[type=reset]{
+		background-color: chocolate;
+		color: yellowgreen;
+		font-weight: 900;
+	}
+	[type=button]{
+		background-color:violet;
+		color: springgreen;
+		font-weight: 900;
+		width: 100px;
+		height: 100px;
+	}

@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>���� �몄�</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="./css/com.css">
+<script type="text/javascript" src="./js/com.js">
+	//�댁��移��� code瑜� 湲곗����硫� ���⑸����..
+	function test() {
+
+	}
+</script>
+<script type="text/javascript">
+	function loading(f) {
+		f.id.focus();
+	}
+	function form_check(f) {
+		if (is_null(f.id.value)) {
+			alert("���대��瑜� ���ν���몄��!!");
+			f.id.focus();
+			return;
+		}
+		if (is_null(f.pass.value)) {
+			alert("�⑥�곗����瑜� ���ν���몄��!!");
+			f.pass.focus();
+			return;
+		}
+		f.method = 'POST';
+		f.action = 'SessionLogin';
+		f.submit();
+	}
+</script>
+</head>
+
+<body onload="loading(document.login);">
+	<h3 align="center">������ ���� 濡�洹몄�� ������</h3>
+
+	<form name="login" action="javascript:form_check(document.login);">
+		<table bgcolor="black" cellspacing="1" cellpadding="5" align="center">
+			<tr>
+				<th bgcolor="44ff44"><font size="2">���대��</font></th>
+				<td bgcolor="white" width="170" align="center"><input
+					type="text" size="20" name="id"></td>
+			</tr>
+			<tr>
+				<th bgcolor="44ff44"><font size="2">鍮�諛�踰���</font></th>
+				<td bgcolor="white" width="170" align="center"><input
+					type="password" size="20" name="pass"></td>
+			</tr>
+			<tr>
+				<th colspan="2" bgcolor="ff8888"><input type="checkbox"
+					name="savecookie" checked="checked"><font size="2">ID����</font>
+					&nbsp;<input type="submit" value="濡�洹몄��" class="TXTFLD"></th>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
